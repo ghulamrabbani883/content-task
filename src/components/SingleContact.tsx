@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { AiOutlineUser, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { LuSubtitles } from "react-icons/lu";

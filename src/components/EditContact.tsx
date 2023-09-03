@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { contactType, useAppDispatch, useAppSelector } from "../app/store";
+import { contactType, useAppDispatch } from "../app/store";
 import { useState } from "react";
 import { editContact,  useContact } from "../app/contact/contactSlice";
 import { useNavigate, useParams } from "react-router-dom";
@@ -38,7 +38,7 @@ const EditContact = () => {
   };
   useEffect(()=>{
     setContactDetail(contact)
-  },[contactId])
+  },[contactId, contact])
 
   return (
     <div className="flex flex-col items-center gap-12 pt-16 ls:pt-20">

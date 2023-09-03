@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineUser, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { LuSubtitles } from "react-icons/lu";
-import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { contactType, useAppDispatch } from "../app/store";
 import { deleteContact } from "../app/contact/contactSlice";

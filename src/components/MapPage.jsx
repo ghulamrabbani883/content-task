@@ -33,7 +33,7 @@ const MapPage = () => {
   }, []);
   useEffect(() => {
     matchData();
-  }, [countries]);
+  }, [countries, matchData]);
 
   return (
     <div className="w-full px-4 md:px-5 lm:px-8 ls:px-8 py-20 lg:py-24 flex flex-col gap-20 justify-center items-center">
