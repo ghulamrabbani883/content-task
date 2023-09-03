@@ -17,7 +17,7 @@ const PageOutlet = () => {
       <aside
         className={` ${
           !isResponsive ? "-translate-x-56" : "translate-x-0"
-        } absolute w-56 -z-1 bg-tertiary z-90 shadow-lg ls:sticky ls:block ls:translate-x-0 ls:w-1/5 top-0 left-0 z-5 transition-all duration-150`}
+        } absolute w-56 -z-1 bg-tertiary z-9 shadow-lg ls:sticky ls:block ls:translate-x-0 ls:w-1/5 top-0 left-0 z-5 transition-all duration-150`}
       >
         <ul className="w-full mt-10 ls:mt-14 list-none sticky top-16 left-0 flex flex-col items-start gap-5 pt-20 pl-6 shadow-lg h-screen">
             <RxCross2 className="absolute right-3 top-5 text-secondary ls:hidden" size={24} onClick={handleClick} />

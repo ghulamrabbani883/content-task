@@ -19,29 +19,10 @@ const CountryMap = ({ countries }) => {
       `<b>${name}</b> <br /> Active:- ${active} Deaths:- ${deaths} Recovered:- ${recovered}`
     );
   };
-  const [height, setHeight] = useState('');
-  const [width, setWIdth] = useState('100vw');
-
-  useEffect(()=>{
-    console.log(window.innerWidth)
-    if(window.innerWidth < 500){
-      setHeight('200px')
-    }
-    if(window.innerWidth > 500 && window.innerWidth < 768){
-      setHeight('350px')
-    }
-    if(window.innerWidth > 768 && window.innerWidth < 920){
-      setHeight('400px')
-    }
-    if(window.innerWidth > 920 ){
-      setHeight('500px')
-      setWIdth('60%')
-    }
-  },[])
-  console.log(height)
+  
   return (
     <MapContainer
-      style={{ height: height, width: width, overflowX:"hidden"}}
+      style={{ height: "500px", width: "100%"}}
       center={[20, 100]}
       zoom={2}
     >
